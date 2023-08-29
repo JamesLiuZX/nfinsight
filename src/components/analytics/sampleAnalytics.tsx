@@ -1,7 +1,6 @@
 import MainLayout from "@/components/layouts/MainLayout";
 
 export default function AnalyticsPage() {
-  // Sample data
   const analysisData =
     "This is a sample analysis of the company's performance over the past quarter. The company has shown significant growth in the tech sector and has outperformed its competitors in various metrics.";
 
@@ -21,14 +20,14 @@ export default function AnalyticsPage() {
     <MainLayout>
       <div className="flex w-full p-2 pb-8 sm:p-4 xl:p-8 xl:pt-4">
         {/* Analysis Section */}
-        <div className="flex-1 border-2 border-black bg-gray-200 p-4 transition-transform duration-300 hover:-translate-x-[1px] hover:-translate-y-[1px] hover:border-b-4 hover:border-r-4">
+        <div className="flex-1 border-2 border-black bg-gray-200 p-4">
           <h2 className="mb-4 text-2xl font-bold">Analysis</h2>
           <p>{analysisData}</p>
         </div>
 
         <div className="flex flex-1 flex-col space-y-4">
           {/* Similar Companies Section */}
-          <div className="flex-1 border-2 border-black bg-gray-200 p-4 transition-transform duration-300 hover:-translate-x-[1px] hover:-translate-y-[1px] hover:border-b-4 hover:border-r-4">
+          <div className="flex-1 border-2 border-black bg-gray-200 p-4">
             <h2 className="mb-4 text-2xl font-bold">Similar Companies</h2>
             <ul>
               {similarCompaniesData.map((company) => (
@@ -38,7 +37,7 @@ export default function AnalyticsPage() {
           </div>
 
           {/* Learning Points Section */}
-          <div className="flex-1 border-2 border-black bg-gray-200 p-4 transition-transform duration-300 hover:-translate-x-[1px] hover:-translate-y-[1px] hover:border-b-4 hover:border-r-4">
+          <div className="flex-1 border-2 border-black bg-gray-200 p-4">
             <h2 className="mb-4 text-2xl font-bold">Learning Points</h2>
             <ul>
               {learningPointsData.map((point) => (
